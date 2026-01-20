@@ -16,6 +16,18 @@ This project uses **Logistic Regression** to classify cybersecurity events such 
 - The model predicts the event type with the highest probability.
 - Users can input new event data to see predictions and probability scores.
 
+## Project 2: Multi-Cloud User Authentication Analysis (PCA + Clustering + Isolation Forest)
+
+This project analyzes multi-cloud authentication session logs to detect anomalies and uncover patterns in user behavior. It uses **PCA for dimensionality reduction**, **Isolation Forest for anomaly detection**, and **hierarchical clustering/t-SNE** for pattern discovery and visualization.
+
+**How it works:**
+- Categorical features (e.g., session type, outcome, IP) are converted to **numeric values**, and all features are standardized.  
+- **PCA** reduces high-dimensional session data into 5 principal components, capturing the most important patterns while removing noise.  
+- **Isolation Forest** identifies unusual or anomalous sessions based on PCA-transformed data.  
+- **Hierarchical clustering** groups similar sessions and highlights clusters with high anomaly ratios.  
+- **t-SNE** visualizes sessions in 2D, showing natural clusters and outliers for easy interpretation.  
+- Users can explore session clusters, anomaly scores, and unusual authentication patterns for security analysis.
+
 
 ---
 
